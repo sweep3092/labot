@@ -9,7 +9,8 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-
+  robot.hear /OMIKUJI$/i, (msg) ->
+    msg.send msg.random ["大吉なっしー!! 後ろから刺されないように気をつけるなっし。", "中吉なっしー!! いい方だけど油断するなよなっしー", "小吉なっしー!! まぁそこそこなっしねードンマイ", "吉なっしー!! ドンマイ！", "末吉なっしー!! 世も末なっしー", "凶なっしー...とりあえず顔を洗ってこいなっしー"]
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
